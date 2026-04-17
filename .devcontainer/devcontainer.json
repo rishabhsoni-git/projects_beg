@@ -1,0 +1,16 @@
+{
+  "name": "C++ with MinGW",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/cmake:1": {}
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y mingw-w64",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  }
+}
